@@ -1,6 +1,6 @@
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import './App.css'
-import routes from './routes/AppRoutes'
+import routes from './routes/AppRoutes.jsx'
 
 function App() {
  
