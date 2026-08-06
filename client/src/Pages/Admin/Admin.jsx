@@ -10,6 +10,7 @@ const Admin = () => {
     setIsLoading(true);
 
     try {
+      console.log(API_URL)
       const image = e.target.image.files[0];
       const title = e.target.title.value;
       const description = e.target.description.value;

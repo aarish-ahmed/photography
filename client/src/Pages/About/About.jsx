@@ -32,11 +32,11 @@ useEffect(()=>{
     </div>
     <div className="image flex mx-8  md:py-16 justify-center ">
         <img src={image?.image?.url}
-  className="mt-5 w-100 h-140"
+  className="mt-5 w-100 h-120"
   alt="Admin"></img>
     </div>
     </div>
-    <div className="footer bg-gray-100 text-center mt-5 pt-5 pb-5 md:p-10">
+    <div className="footer bg-gray-100 text-center px-6 mt-5 pt-8 pb-8 md:p-10">
         <p>All photography © Copyright Levon Biss 2025.   No unauthorised use.   For all enquiries please email - <a href="https://www.levonbiss.com/" className="text-orange-500 border-b"> contact@levonbiss.com</a></p>
       </div>
     </>

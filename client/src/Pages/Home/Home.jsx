@@ -43,16 +43,17 @@ const Home = () => {
         <p className="text-[18px] font-serif md:text-[22px]">
           Sign up with your email address to receive news and updates.{" "}
         </p>
-        <div className="flex flex-row items-center justify-center gap-2 my-4">
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="bg-white text-center py-5 px-10"
-          ></input>
-          <button className="border border-orange-500 py-5 px-6 hover:bg-orange-500">
-            Sign up
-          </button>
-        </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+  <input
+    type="email"
+    placeholder="Email Address"
+    className="text-center sm:w-80 h-14 bg-white px-4"
+  />
+
+  <button className=" sm:w-auto h-14 px-8 border border-orange-500 hover:bg-amber-500">
+    Sign up
+  </button>
+</div>
       </div>
       <div className="footer bg-gray-100 text-center pt-15 pb-10">
         <p>

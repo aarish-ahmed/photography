@@ -156,7 +156,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="footer bg-gray-100 text-center mt-5 pt-8 pb-8 md:p-10">
+      <div className="footer bg-gray-100 text-center px-4 mt-5 pt-8 pb-8 md:p-10">
         <p>
           All photography © Copyright Levon Biss 2025. No unauthorised use. For
           all enquiries please email -

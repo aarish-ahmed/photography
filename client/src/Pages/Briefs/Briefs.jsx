@@ -38,7 +38,7 @@ const Briefs = () => {
         })}
         
     </div>
-    <div className="footer bg-gray-100 text-center pt-15 pb-10">
+    <div className="footer bg-gray-100 text-center px-6 pt-8 pb-8">
         <p>All photography © Copyright Levon Biss 2025.   No unauthorised use.   For all enquiries please email - <a href="https://www.levonbiss.com/" className="text-orange-500 border-b"> contact@levonbiss.com</a></p>
       </div>
     </>

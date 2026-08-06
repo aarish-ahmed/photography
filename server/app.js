@@ -8,7 +8,7 @@ const app=express()
 app.use(
   cors({
     origin: "https://watch-my-photographs.vercel.app",
-     credentials: true,
+    credentials: true,
   })
 );
 app.use(cookieParser()); 
@@ -18,3 +18,6 @@ app.use('/admin',adminRoutes)
 app.use('/app',appRoutes)
 
 export default app
+
+// https://watch-my-photographs.vercel.app
+//  credentials: true,

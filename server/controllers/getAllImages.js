@@ -1,6 +1,7 @@
 import Image from "../models/image.js";
 const getAllImages = async (req, res) => {
     try {
+        console.log('req came from home')
         const allImages=await Image.find()
     return res.status(200).json(allImages)
     } catch (error) {
