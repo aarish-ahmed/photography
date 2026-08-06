@@ -26,17 +26,13 @@ const login = async (req, res) => {
       },
       process.env.JWT_SECRET,
       {
-        expiresIn: "7d",
+        expiresIn: "10m",
       }
     );
 
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: false, // true in production
-      sameSite: "lax",
-      maxAge: 10 * 60 * 1000,
-    });
-
+   res.cookie("token", token, {
+  maxAge: 10 * 60 * 1000,
+});
     return res.status(200).json({
       message: "Login successful",
     });
