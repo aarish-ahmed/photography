@@ -62,6 +62,7 @@ const Admin = () => {
   const handleDelete = async (id, publicId) => {
     const res = await fetch(`${API_URL}/admin/${id}`, {
       method: "DELETE",
+      
       headers: {
         "content-type": "application/json",
       },
