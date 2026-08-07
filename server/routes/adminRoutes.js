@@ -11,6 +11,7 @@ import addContact from '../controllers/addContact.js'
 import login from '../controllers/login.js'
 import authMiddleware from '../middlewares/authMiddleware.js'
 import getAllImages from '../controllers/getAllImages.js'
+import  logout  from '../controllers/logout.js'
 const adminRoutes=express.Router()
 
 adminRoutes.post('/image/add',authMiddleware,upload.single('image'),addImage)
@@ -23,5 +24,6 @@ adminRoutes.post(
   addContact
 );
 adminRoutes.post('/login',login)
+adminRoutes.post('/logout',logout)
 
 export default adminRoutes

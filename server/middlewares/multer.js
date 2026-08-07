@@ -1,9 +1,12 @@
-import multer from 'multer'
+import multer from "multer";
 
-const storage=multer.diskStorage({})
+const storage = multer.memoryStorage();
 
-const upload=multer({
+const upload = multer({
     storage,
-})
+    limits: {
+        fileSize: 25 * 1024 * 1024, // 25 MB
+    },
+});
 
-export default upload
+export default upload;

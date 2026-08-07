@@ -13,8 +13,14 @@ const authMiddleware = (req, res, next) => {
     jwt.verify(token, process.env.JWT_SECRET);
     next();
   } catch (error) {
+    if (error.name === "TokenExpiredError") {
+      return res.status(401).json({
+        message: "Session timed out. Please login again.",
+      });
+    }
+    
     return res.status(401).json({
-      message: "Invalid token",
+      message: "Invalid token. Please login again.",
     });
   }
 };
