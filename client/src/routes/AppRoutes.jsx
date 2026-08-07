@@ -5,6 +5,9 @@ import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Briefs from "../Pages/Briefs/Briefs";
 import Login from "../Pages/Login/Login";
+import Services from "../Pages/Services/Services";
+import Gallery from "../Pages/Gallery/Gallery";
+import Pricing from "../Pages/Pricing/Pricing";
 const routes = [
   {
     path: "/",
@@ -55,6 +58,30 @@ const routes = [
     element: (
       <>
         <Login />
+      </>
+    ),
+  },
+  {
+    path: "/services",
+    element: (
+      <>
+        < Services/>
+      </>
+    ),
+  },
+  {
+    path: "/gallery",
+    element: (
+      <>
+        <Gallery/>
+      </>
+    ),
+  },
+   {
+    path: "/pricing",
+    element: (
+      <>
+        <Pricing/>
       </>
     ),
   },
