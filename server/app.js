@@ -1,23 +1,24 @@
-import express from 'express'
-import cors from 'cors'
-import adminRoutes from './routes/adminRoutes.js';
-import appRoutes from './routes/appRoutes.js';
+import express from "express";
+import cors from "cors";
+import adminRoutes from "./routes/adminRoutes.js";
+import appRoutes from "./routes/appRoutes.js";
 import cookieParser from "cookie-parser";
-const app=express()
+const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://remnantwedding.vercel.app",
     credentials: true,
-  })
+  }),
 );
-app.use(cookieParser()); 
-app.use(express.json({ limit: '50mb' }));
-app.use(express.urlencoded({ limit: '50mb', extended: true }));
-app.use('/admin',adminRoutes)
-app.use('/app',appRoutes)
+app.use(cookieParser());
+app.use(express.json({ limit: "50mb" }));
+app.use(express.urlencoded({ limit: "50mb", extended: true }));
+app.use("/admin", adminRoutes);
+app.use("/app", appRoutes);
 
-export default app
+export default app;
 
 // https://watch-my-photographs.vercel.app
 //  credentials: true,
+// https://remnantwedding.vercel.app
